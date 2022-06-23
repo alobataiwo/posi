@@ -1,0 +1,10 @@
+from django.urls import path
+from . import views
+app_name= 'clener'
+
+urlpatterns = [
+    path('simpleview/',views.simple_view,name='simpleview'),
+    path('design/',views.design, name='design'),
+    path('login/',views.login_view, name='login'),
+    path('signup/',views.signup, name='signup')
+]
